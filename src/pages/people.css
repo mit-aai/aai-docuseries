@@ -1,0 +1,108 @@
+.page-body {
+    background-color: var(--confessions-beige);
+}
+
+.people-header-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.people-header-container {
+    padding: 0 64px 24px 64px;
+    width: 1000px;
+}
+
+.leads-title {
+    text-align: center;
+    color: var(--confessions-gray);
+    font-size: 16pt;
+    font-style: italic;
+    margin: 12px 0;
+}
+
+.leads-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 64px;
+}
+
+.leads-info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.horizontal {
+    align-items: top;
+}
+
+.leads-name {
+    font-size: 12pt;
+    color: var(--confessions-grayhover);
+    text-decoration: none;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.leads-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    margin: 0 12px;
+    opacity: 0.7;
+}
+
+.leads-img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.clicked {
+    opacity: 1;
+}
+
+.leads-img-static {
+    height: 124px;
+    width: 124px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    margin: 0 12px;
+}
+
+.leads-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.leads-blurb-static {
+    text-align: left;
+    color: var(--confessions-grayhover);
+    max-width: 800px;
+    margin: 32px 24px;
+}
+
+.leads-blurb {
+    text-align: left;
+    color: var(--confessions-grayhover);
+    max-width: 800px;
+}
+
+.leads-blurb-title {
+    margin-bottom: 16px;
+    color: var(--confessions-gray);
+    font-size: 16pt;
+}
+
+.text-center {
+    text-align: center;
+}

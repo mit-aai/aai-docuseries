@@ -1,0 +1,146 @@
+.episodes-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.episodes-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.episode-block-container {
+    margin-bottom: 16px;
+}
+
+.episodes-sidebar-wrapper {
+    position: sticky;
+    top: 116.75px;
+    height: 100%;
+    max-height: calc(100vh - 36px - 116.75px);
+    transition: transform 0.4s ease-in-out;
+}
+
+.episodes-sidebar-wrapper.scrolled {
+    transform: translateY(calc(-1 * (116.75px - 24px)));
+    max-height: calc(100vh - 48px);
+}
+
+.episodes-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    margin: 0 24px 0 36px;
+    overflow: auto;
+}
+
+.episodes-sidebar-name {
+    font-size: 12pt;
+    margin-bottom: 16px;
+    color: var(--confessions-grayhover);
+}
+
+.episodes-sidebar-name:hover {
+    cursor:pointer;
+    color: var(--confessions-gray);
+}
+
+.highlight {
+    color: var(--confessions-gray);
+}
+
+.episodes-blurb-wrapper {
+    position: sticky;
+    top: 116.75px;
+    height: 100%;
+    max-height: calc(100vh - 36px - 116.75px);
+    transition: transform 0.4s ease-in-out;
+    flex-direction: column;
+    margin: 0 24px 0 48px;
+    overflow: auto;
+    width: 300px;
+    display: flex;
+}
+
+.episodes-blurb-wrapper.scrolled {
+    transform: translateY(calc(-1 * (116.75px - 24px)));
+    max-height: calc(100vh - 48px);
+}
+
+.episodes-blurb-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.episodes-blurb-themes {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.episodes-blurb-summary {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.episodes-blurb-cw {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.episodes-blurb-none {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 24px;
+}
+
+.disclaimer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.disclaimer {
+    color: var(--confessions-grayhover);
+    font-style: italic;
+    margin: 24px 0 8px 0;
+    font-size: 12px;
+    width: 300px;
+    text-align: center;
+}
+
+.episodes-button {
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+    stroke: var(--confessions-gray);
+    fill: var(--confessions-beige);
+}
+
+.episodes-button:hover {
+    fill: var(--confessions-gray);
+    stroke: var(--confessions-beige);
+}
+
+@media (max-width: 650px) {
+    .episodes-sidebar-wrapper {
+        display: none;
+    }
+    .episodes-blurb-wrapper {
+        display: none;
+    }
+    .episode-block-container {
+        max-width: 500px;
+    }
+    .episodes-sidebar-container {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 800px) {
+    .episodes-sidebar-container {
+        margin: 0 12px 0 12px;
+    }
+}

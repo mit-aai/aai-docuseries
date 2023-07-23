@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container:hover {
+    cursor: pointer
+}
+
+.container:hover .button{
+    transition: 0.2s;
+    text-shadow: 0.5px 0.5px var(--confessions-grayhover);
+}
+
+.button {
+    color: var(--confessions-grayhover);
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+.button-img {
+    color: var(--confessions-grayhover);
+}
+
+.container:hover .button-img{
+    color: var(--confessions-gray);
+    transition: 2s;
+}

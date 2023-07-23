@@ -1,0 +1,27 @@
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    padding: 0 64px;
+    max-width: 1000px;
+}
+
+.about-text {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    padding: 12px 0;
+}
+
+.about-disclaimer {
+    color: var(--confessions-gray);
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .about-text {
+        font-size: 11pt;
+    }
+    
+}

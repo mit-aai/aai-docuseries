@@ -1,0 +1,20 @@
+.video-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+
+}
+
+.video-spinner-container {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+}
+
+.video-spinner > div {
+    width: 8px;
+    height: 48px;
+}

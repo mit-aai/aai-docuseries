@@ -1,0 +1,186 @@
+.page-body {
+    background-color: var(--confessions-beige);
+}
+
+.hamburger {
+    position: fixed;
+    right: 36px;
+    top: 36px;
+    transition: all 0.4s ease-in-out;
+}
+
+.burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: var(--confessions-grayhover);
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+}
+
+.hide {
+    transform: translateY(-116.75px);
+    transition: all 0.4s ease-in-out;
+}
+
+.hamburger:hover .burger {
+    background-color: var(--confessions-gray);
+}
+
+.sidebar {
+    height: 100vh; 
+    width: var(--sidebar-width);
+    background-color: var(--confessions-beige);
+    overflow: auto;
+    position: fixed;
+    padding-top: 24px;
+    top: 0px;
+    right: calc(var(--sidebar-width) * -1);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.sidebar-episode-list {
+    height: 100vh; 
+    width: var(--sidebar-width);
+    background-color: var(--confessions-beige);
+    overflow: auto;
+    position: fixed;
+    padding-top: 24px;
+    top: 0px;
+    right: calc(var(--sidebar-width) * -1);
+    display: flex;
+    flex-direction: column;
+}
+
+.show-sidebar {
+    transform : translate(calc(var(--sidebar-width) * -1));
+    transition : 0.5s;
+}
+
+.hide-sidebar {
+    transform : translate(var(--sidebar-width));
+    transition: 1s;
+}
+
+.sidebar-exit-button {
+    color: var(--confessions-gray);
+    padding: 24px;
+    text-align: middle;
+    width: 8px;
+    height: 8px;
+    right: var(--sidebar-width);
+    top: -10px;
+    position: fixed;
+    z-index: 1;
+    font-size: 24px;
+}
+
+.ep-back-button {
+    padding: 16px 0px 16px 24px;
+    margin: 0px 24px;
+    font-size: 14pt;
+    color: var(--confessions-gray);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.ep-back-button:hover {
+    background-color: #dbdbd4;
+    transition: 0.3s;
+    color: var(--confessions-gray);
+    cursor: pointer;
+}
+
+.sidebar-exit-button_hide {
+    display: none;
+}
+
+.sidebar-link {
+    padding: 16px 0px 16px 48px;
+    margin: 0px 24px;
+    font-size: 14pt;
+    color: var(--confessions-gray);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar-link-active {
+    padding: 16px 0px 16px 48px;
+    margin: 0px 24px;
+    font-size: 14pt;
+    color: var(--confessions-gray);
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #697769;
+    color: var(--confessions-beige)
+}
+
+.sidebar-link-active:hover { /* there must be a way to apply this to all classes with :hover */
+    cursor: pointer;
+    background-color: #dbdbd4;
+    color: var(--confessions-gray)
+}
+
+.sidebar-link:hover {
+    background-color: #dbdbd4;
+    transition: 0.3s;
+    color: var(--confessions-gray);
+    cursor: pointer;
+}
+
+.sidebar-exit-button:hover {
+    color: var(--confessions-gray);
+    cursor: pointer;
+}
+
+@media (max-width: 860px) {
+    .hamburger {
+        display: fixed;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        z-index: 1;
+    }
+    .hamburger:hover {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 860px) {
+    .sidebar-container {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        right: 24px;
+        top: 24px;
+    }
+}
+
+.temp_background {
+    height: 100vh; 
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: var(--confessions-gray);
+    opacity: 60%;
+    position: fixed;
+    z-index: 1;
+}
+
+.temp_background:hover {
+    cursor: pointer;
+}
+
+.temp_background_hide { 
+    display:none;
+}

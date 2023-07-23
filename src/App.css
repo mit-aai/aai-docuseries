@@ -1,0 +1,12 @@
+:root {
+  --confessions-beige: #F6F2EB;
+  --confessions-jade: #bdcab3;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-body {
+  background-color: var(--confessions-beige);
+}

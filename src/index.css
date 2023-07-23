@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Inter', Arial, Helvetica, sans-serif, monospace;
+}
+
+:root {
+  --confessions-beige: #EDEAE5;
+  --confessions-jade: #A7AB82;
+  --confessions-gray: #697769;
+  --confessions-grayhover: #2D352D;
+  --confessions-lightgray: #ADADAD;
+  --sidebar-width: 300px;
+}
+
+* {
+  font-family: 'Inter', Arial, Helvetica, sans-serif, monospace;
+}
+
+.page-body {
+  background: var(--confessions-beige);
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.header {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: var(--confessions-grayhover);
+  font-size: 24pt;
+  font-weight: 800;
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .header {
+      font-size: 20pt;
+  }
+  
+}

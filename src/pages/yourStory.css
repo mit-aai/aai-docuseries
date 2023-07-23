@@ -1,0 +1,29 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.form {
+    width: 640px;
+    height: 814px; /* the exact form height */
+    flex: 3 3 auto;
+    z-index: 0;
+}
+
+
+.spinner-container {
+    position: absolute;
+    top: calc(100vh / 2 - 24px);
+    left: calc(100vw / 2 - 24px); /* this is an estimate */
+}
+
+.spinner > div {
+    width: 8px;
+    height: 48px;
+}

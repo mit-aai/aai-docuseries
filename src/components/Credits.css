@@ -1,0 +1,39 @@
+.people-credit-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.people-credit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 2;
+    max-width: 1000px;
+}
+
+.people-credit-box {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 12px 12px;
+}
+
+.people-credit-title {
+    font-size: 16pt;
+    color: var(--confessions-gray);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.people-credit-names {
+    font-size: 12pt;
+    color: var(--confessions-grayhover);
+    list-style: none;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .people-credit-container {
+        flex-direction: column;
+    }
+}
